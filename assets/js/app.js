@@ -512,3 +512,16 @@
     axilInit.i();
 
 })(window, document, jQuery);
+
+let listSection = document.querySelector(".option")
+		let isShow = true;
+		function showhidden(){
+			if (isShow) {
+				listSection.style.display="none";
+				isShow = false;
+			} else{
+				listSection.style.display="block"
+				isShow = true;
+			}
+		
+	} 

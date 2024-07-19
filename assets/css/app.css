@@ -636,6 +636,154 @@ input {
 .opacity-50 {
     opacity: 0.5;
 }
+/* --------------------------------popup style------------------------------------ */
+
+ /* <!----------------------------------------popup icons--------------------------------------------------> */
+ .social-menu{
+    position: absolute;
+    bottom: 40px;
+    left: 2%;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    z-index: 5;
+
+}
+
+.butn-menu {
+}
+.butn-menu button{
+    
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: #fff;
+    text-align: center;
+    transition: .6s;
+    /* box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5); */
+
+}
+.butn-menu button i{
+    /* font-size: 20px; */
+
+}
+
+.butn-menu button:hover{
+    transform: translate(0,-10px);
+    
+
+}
+.button:hover, .button:focus {
+    color: #313133;
+    /* transform: translateY(-6px); */
+  }
+  
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  .butn-menu button::after {
+    content: '';
+    width: 5px; height: 5px;
+    border-radius: 100%;
+    border: 10px solid var(--color-primary);
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 100px;
+      height: 100px;
+      opacity: 0;
+    }
+  }
+
+.button:hover, .button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+ul.option {
+    display: none;
+    position: absolute;
+    top: -217px;
+    left: -40px;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    margin-bottom: 6px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #ffffff82;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li{
+    list-style: none;
+    margin: 0 6px;
+}
+.social-menu ul li i{
+    font-size: 18px;
+    line-height: 47px;
+    transition: .6s;
+    color: #000;
+}
+.social-menu ul li a:hover{
+    transform: translate(-20px,0);
+}
+.social-menu ul li i:hover{
+    color: #fff;
+
+}
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: #25D366;
+    color: #fff;
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #e4405f;
+    color: #fff;
+}
+
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #0f3d5e;
+    color: #fff;
+}
+.social-menu ul li:nth-child(4) a:hover{
+    background-color: #0f3d5e;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*=======================================================================
 2. Elements Styles
@@ -691,6 +839,14 @@ input {
     .back-to-top.show {
         bottom: 10px;
         right: 10px;
+    }
+    .social-menu {
+        bottom: 10px;
+
+    }
+    .butn-menu button {
+        width: 40px;
+        height: 40px;
     }
 }
 

@@ -201,3 +201,59 @@
     opacity: .75;
     color: black;
 }
+
+
+
+/* -------------------projrct link------------------------ */
+
+.prjct-click{
+    position: absolute;
+    top: 52%;
+    right: 5%;
+}
+i.mt-3.fa-solid.fa-arrow-up-right-from-square {
+    font-size: 20px;
+}
+
+.prjct-click:hover{
+    color: red;
+    
+
+}
+@media screen and (max-width: 1199px){
+    .prjct-click{
+        top: 45%;
+    }
+
+}
+@media screen and (max-width: 991px){
+    .prjct-click{
+        top: 31%;
+    }
+    i.mt-3.fa-solid.fa-arrow-up-right-from-square {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    .prjct-click{
+        top: 62%;
+    }
+}
+
+@media screen and (max-width: 446px){
+    .prjct-click{
+        top: 57%;
+    }
+}
+@media screen and (max-width: 391px){
+    .prjct-click{
+        top: 54%;
+    }
+}
+@media screen and (max-width: 349px){
+    .prjct-click{
+        top: 50%;
+    }
+}
