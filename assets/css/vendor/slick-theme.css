@@ -211,6 +211,15 @@
     top: 52%;
     right: 5%;
 }
+i.mt-3.fa-solid.fa-arrow-up-right-from-square::before{
+    /* background-color: rgba(32, 38, 32, 0.8); */
+    background: var(--color-primary);
+    padding: 3px;
+    /* border-radius: 5px; */
+}
+
+
+
 i.mt-3.fa-solid.fa-arrow-up-right-from-square {
     font-size: 20px;
 }
